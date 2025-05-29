@@ -1,0 +1,38 @@
+/*15. Build a Currency Converter 
+o Develop a currency converter that fetches exchange rates from an API. 
+o Use HTML to structure the content, CSS to style the website, and 
+JavaScript to add interactive elements. 
+o Make at least five git commits, ensuring each commit reflects significant 
+progress 
+o Host the website on GitHub Pages. */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>💱 Currency Converter</h1>
+    <form id="converterForm">
+      <div class="row">
+        <label>Amount:</label>
+        <input type="number" id="amount" required />
+      </div>
+      <div class="row">
+        <label>From:</label>
+        <select id="fromCurrency"></select>
+      </div>
+      <div class="row">
+        <label>To:</label>
+        <select id="toCurrency"></select>
+      </div>
+      <button type="submit">Convert</button>
+    </form>
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
